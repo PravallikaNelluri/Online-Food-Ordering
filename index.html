@@ -1,0 +1,153 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+	    <div class="container-fluid">
+		<img src="image/logo.png" width="100px" height="80px">
+		<a href="" class="navbar-brand text-warning font-weight-bold text-red" >DELHI INDIAN CLUB RESTAUANT</a>
+	
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navMenu">
+		    <ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+			    <a href="#" class="nav-link">Home</a>
+			</li>
+			<li class="nav-item dropdown">
+			    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown">Items</a>
+				<div class="dropdown-menu" data-target="#navbarDropdown">
+				   <a class="dropdown-item" href="breakfast.php">Breakfast</a>
+				   <a class="dropdown-item" href="lunch.php">Lunch</a>
+				   <a class="dropdown-item" href="dinner.php">Dinner</a>
+				</div>
+			</li>
+			<li class="nav-item">
+			    <a  href="reservation.html" class="nav-link"> Reservation</a>
+			</li>
+
+			<li class="nav-item">
+			    <a href="login.php" class="nav-link text-white">Login</a>	
+			</li>
+		    </ul>
+		</div>
+	    </div>
+	</nav>
+	<br><br>
+<img src="image/res1.jpeg" width="1350px" height="600px"><br><br>
+
+
+<div class="container">
+    <div class="row">
+	<div class="col-md-4 col-lg-3 col-sm-3 col-10 d-block m-auto ">
+	   <div class="card text-center">
+		<img src="image/1.jpeg" class="card-img img-fluid">
+		<div class="card-body">
+		<a href="breakfast.php" class="btn btn-success">Breakfast</a>
+		</div>
+	   </div>
+	</div> 
+	   <div class="col-md-4 col-lg-4 col-sm-3 col-10 d-block m-auto">
+	   <div class="card text-center">
+		<img src="image/2.jpeg" class="card-img img-fluid">
+		    <div class="card-body">
+			<a href="lunch.php" class="btn btn-success" id="lunch">Lunch</a>
+			<span class="span-right" id="msg1"></span>
+		    </div>
+	   </div>
+    </div>  
+    <div class="col-md-4 col-lg-4 col-sm-3 col-10 d-block m-auto">
+	<div class="card text-center">
+	    <img src="image/3.jpeg" class="card-img img-fluid">
+		<div class="card-body">
+		    <a href="#" class="btn btn-success" id="dinner">Dinner</a>
+			<span class="span-left" id="msg"></span>
+		
+		</div>
+	</div>
+    </div> 
+  </div>
+</div>
+ 
+
+<footer class="page-footer bg-dark">
+    <div class="container text-center text-md-left mt-5">
+	<div class="row">
+	    <div class="col-md-3  mx-auto mb-4">
+		<h6 class="text-warning"> <i class="fa fa-home"></i> OPENING HOURS </h6>
+		    <p style="color:white">Mon & Tue CLOSED<br>
+			Wednesday 10.00 - 24.00<br>
+			Thursday 10:00 - 24:00<br>
+			Friday 10:00 - 12:00<br>
+			Saturday 10:00 - 23:00<br>
+			Sunday Closed<br>
+			
+		    </p>
+
+	    </div>
+	    <div class="col-md-3 mx-auto mb-4">
+		<h6  class="text-warning"><i class="fa fa-phone"></i> CONTACT US</h6>
+		    <p style="color:white">9440914567<br>
+				9498972567<br>
+				9876514567<br>
+			
+		    </p>
+		</div>
+		<div class="col-md-3 mx-auto mb-4">
+		<h6 class="text-warning">Support us</h6>
+	<p style="color:white">
+    <i class="fa fa-instagram"></i> instagram<br>
+	<i class="fa fa-twitter"></i> twitter<br>
+	<i class="fa fa-facebook"></i> facebook<br>
+	<i class="fa fa-youtube"></i> youtube<br>
+    </p>
+
+	</div>
+    </div>
+</div>
+</footer>
+ 
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html> 
+<script>
+const dat=new Date();
+var hour=dat.getHours();
+if(hour>=00 && hour<=17)
+{
+document.getElementById('dinner').style.display='none';
+document.getElementById('msg').innerHTML="Order Unavailable";
+}
+
+
+
+</script>
+<script>
+const date=new Date();
+var hours=date.getHours();
+if(hours>=00 && hours<=11)
+{
+document.getElementById('lunch').style.display='none';
+document.getElementById('msg1').innerHTML="Order Unavailable";
+}
+
+
+
+</script>
